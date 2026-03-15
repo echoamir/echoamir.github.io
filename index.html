@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amir Kolahi</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://amirkolahi.ir/devops.png" sizes="64x64">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: monospace;
+            font-size: 14px;
+            color: #c8cfd8;
+            background: #2b2f3a;
+            margin: auto;
+            padding-top: 60px;
+            line-height: 1.6em;
+            text-align: center;
+        }
+        a {
+            color: #5294e2;
+            text-decoration: none;
+        }
+        b {
+            color: #6a9e41;
+        }
+        .window {
+            background: #3a3f4a;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            border: 2px solid #2e333f;
+            width: 500px;
+            margin: auto;
+            padding: 15px;
+        }
+        .window_header {
+            background: #252830;
+            color: #c8cfd8;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 6px 6px 0 0;
+        }
+        .window_title {
+            font-weight: bold;
+        }
+        .window_controls div {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 6px;
+        }
+        .window_controls .close {
+            background: #fe6256;
+        }
+        .window_controls .maximize {
+            background: #fdbf2e;
+        }
+        .window_controls .minimize {
+            background: #2cc640;
+        }
+        .window_content {
+            padding: 15px;
+            text-align: left;
+        }
+        .blink {
+            animation: blinking 1s infinite;
+        }
+        @keyframes blinking {
+            50% { color: transparent; }
+        }
+        @media screen and (max-width: 600px) {
+            .window {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>  
+    <div class="window">  
+        <div class="window_header">
+            <div class="window_title">Welcome!</div>
+            <div class="window_controls">
+                <div class="close"></div>
+                <div class="maximize"></div>
+                <div class="minimize"></div>
+            </div>
+        </div>
+        <div class="window_content">
+            <p>DevOps & SRE </p>
+            <b>amir@AmirKolahi:~$</b> whoami<br>  
+            I'm Amir Kolahi<br>
+            <b>amir@AmirKolahi:~$</b> cat /etc/contact-info<br>  
+            Email="<a href="mailto:a.kolahi1001@gmail.com">kolahi.amir@outlook.com</a>"<br>
+            Linkedin="<a href="https://www.linkedin.com/in/amirkolahi">amirkolahi</a>"<br>
+            GitHub="<a href="https://github.com/echoamir">@echoamir</a>"<br>
+            <b>amir@AmirKolahi:~$</b> <span class="blink">_</span><br>  
+        </div>
+    </div>
+</body>
+</html>
